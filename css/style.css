@@ -1,0 +1,105 @@
+body
+{
+  margin:0;
+	padding:0;
+	font-family:verdana,sans-serif,arial;
+	font-size:10pt;	
+	background: url("../images/topstrip.gif") repeat-x left top;
+    width:100%;
+    height: 100%; 
+}
+
+#upload_container
+{
+	margin-top:15px;
+}
+
+#uploaded_image_div, #loader_img
+{
+	display:none;
+}
+
+#fg_color_select, #bg_color_select {
+	position: relative;
+	width: 36px;
+	height: 36px;
+	background: url(../images/select.png);
+}
+
+#fg_color_select div, #bg_color_select div {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 30px;
+	height: 30px;
+	background: url(../images/select.png) center;
+}
+
+#preview_text
+{
+	padding:5px;
+	font-family: sans-serif, arial;
+}
+
+#alert_div
+{
+	display:none;
+}
+
+.button {
+        line-height: 1;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        border: none;
+        border: 1px solid #2896f3;
+        background: #198ee7;
+        color: #fff;
+        padding: 7px 18px;
+        background: -webkit-gradient(linear, left top, left bottom, from(#198ee7), to(#0d57db)); /* for webkit browsers */
+        background: -moz-linear-gradient(top,  #198ee7,  #0d57db); /* for firefox 3.6+ */
+        position: relative;
+        cursor: pointer;
+        font-weight: 600;
+        text-shadow: 0 1px 0 rgba(0,0,0,0.4);
+    }
+    
+    .button:before {
+        content: '';
+        border-top: 1px solid #63b3ef;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 88%;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
+    
+    .button:active {
+        background: #0a4ad9;
+        background: -webkit-gradient(linear, left top, left bottom, from(#0a4ad9), to(#1372e1)); /* for webkit browsers */
+        background: -moz-linear-gradient(top,  #0a4ad9,  #1372e1); /* for firefox 3.6+ */
+        text-shadow: 0 -1px 0 rgba(0,0,0,0.4);
+    }
+    
+    .button:active:before {
+        border: none;
+        border-top: none;
+    }
+    
+    .button:active:after {
+        content: '';
+        border: none;
+        border-top: none;
+        border-bottom: 1px solid #408fe8;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 88%;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
