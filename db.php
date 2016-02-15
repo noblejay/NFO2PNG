@@ -2,8 +2,8 @@
 
 if ( !is_local() )
 {
-  $dbc = mysql_connect( 'localhost', 'nfopic_piccy', '8UIKiT' );
-	mysql_select_db( 'nfopic_datas', $dbc );
+  $dbc = mysql_connect( 'localhost', 'nfopic_user', 'password' );
+	mysql_select_db( 'nfopic_db', $dbc );
 }
 
 function is_local()
